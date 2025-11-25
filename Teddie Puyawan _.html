@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<!-- saved from url=(0080)file:///C:/Users/teddie_puyawan/WebstormProjects/untitled10/puyawan_website.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teddie Puyawan | Multimedia Student Portfolio</title>
+
+    <script src="./Teddie Puyawan __files/saved_resource"></script>
+
+    <style>
+        /* Define your emerald green accent color */
+        .accent-text { color: #059669; } /* Emerald Green */
+        .accent-bg { background-color: #059669; }
+        .accent-hover:hover { background-color: #047857; }
+        .section-padding { padding: 4rem 1rem; }
+        @media (min-width: 640px) {
+            .section-padding { padding: 6rem 2rem; }
+        }
+
+        /* UPDATED: Body now uses a solid white background color */
+        body {
+            background-color: #ffffff; /* White background for the entire page */
+            color: #374151; /* Darker text for better contrast on white */
+            scroll-behavior: smooth; /* Smooth scroll behavior for section anchors */
+        }
+
+        /* IMPORTANT: Removed background-image and gradient from #home */
+        #home {
+            background-image: none; /* No background image */
+            background-color: #f9fafb; /* A very light gray for the home section to give it slight distinction */
+        }
+
+        /* Ensure header and footer remain distinct */
+        header {
+            background-color: #ffffff; /* White header */
+            border-bottom: 1px solid #e5e7eb; /* Subtle border */
+        }
+        footer {
+            background-color: #059669; /* Keep accent color for footer */
+        }
+
+        /* Adjust specific elements for new white background */
+        .text-gray-800 { color: #1f2937; } /* Very dark gray for general text */
+        .text-gray-900 { color: #111827; } /* Even darker for main titles */
+        .text-gray-500 { color: #6b7280; } /* Medium gray for secondary text */
+        .text-gray-700 { color: #374151; } /* Dark gray for general content text */
+        .text-gray-600 { color: #4b5563; } /* Slightly lighter dark gray */
+
+
+        /* Ensure links in header are dark for visibility on white */
+        .header-link { color: #1f2937; }
+        .header-link:hover { color: #059669; } /* Keep accent green on hover */
+
+        /* Override specific text colors for visibility */
+        .text-xl, .text-lg, .text-sm, .text-base { color: #374151; } /* Dark text for all general text sizes */
+
+        /* Ensure the accent text is visible */
+        .accent-text { color: #059669; } /* Revert to the primary emerald green */
+
+        /* Card backgrounds should be solid white for clarity */
+        .bg-white {
+            background-color: #ffffff; /* Solid white for cards */
+            border-color: #e5e7eb; /* Light border for cards */
+        }
+
+        /* Adjust hover effects for cards */
+        .bg-white:hover {
+            background-color: #f9fafb; /* Slight light gray on hover */
+            box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+        }
+
+        /* Button adjustments for new background */
+        .shadow-green-400\/50 {
+            box-shadow: 0 4px 6px -1px rgba(5, 150, 105, 0.4), 0 2px 4px -1px rgba(5, 150, 105, 0.2); /* Adjusted shadow to match primary green */
+        }
+
+        /* Tab button color adjustment */
+        .text-gray-600 { color: #4b5563; }
+        .text-gray-900 { color: #111827; }
+
+    </style>
+
+    <script>
+        // Function to handle tab switching
+        function showWorks(type) {
+            const container2D = document.getElementById('works-2d');
+            const container3D = document.getElementById('works-3d');
+            const tab2D = document.getElementById('tab-2d');
+            const tab3D = document.getElementById('tab-3d');
+
+            if (type === '2d') {
+                container2D.classList.remove('hidden');
+                container3D.classList.add('hidden');
+                tab2D.classList.add('border-b-4', 'accent-text', 'font-semibold', 'border-green-600');
+                tab3D.classList.remove('border-b-4', 'accent-text', 'font-semibold', 'border-green-600');
+            } else if (type === '3d') {
+                container2D.classList.add('hidden');
+                container3D.classList.remove('hidden');
+                tab2D.classList.remove('border-b-4', 'accent-text', 'font-semibold', 'border-green-600');
+                tab3D.classList.add('border-b-4', 'accent-text', 'font-semibold', 'border-green-600');
+            }
+        }
+
+        // Smooth scrolling and initial setup
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                    // Close mobile menu after clicking a link
+                    document.getElementById('mobile-menu').classList.add('hidden');
+                });
+            });
+
+            // Mobile menu toggle
+            const menuButton = document.getElementById('menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            menuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            // Set initial active tab
+            showWorks('2d');
+        });
+    </script>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.container{width:100%}@media (min-width: 640px){.container{max-width:640px}}@media (min-width: 768px){.container{max-width:768px}}@media (min-width: 1024px){.container{max-width:1024px}}@media (min-width: 1280px){.container{max-width:1280px}}@media (min-width: 1536px){.container{max-width:1536px}}.sticky{position:sticky}.top-0{top:0px}.z-50{z-index:50}.mx-auto{margin-left:auto;margin-right:auto}.mb-10{margin-bottom:2.5rem}.mb-12{margin-bottom:3rem}.mb-2{margin-bottom:0.5rem}.mb-4{margin-bottom:1rem}.mb-6{margin-bottom:1.5rem}.mb-8{margin-bottom:2rem}.mr-3{margin-right:0.75rem}.mt-12{margin-top:3rem}.block{display:block}.inline-block{display:inline-block}.flex{display:flex}.grid{display:grid}.hidden{display:none}.h-48{height:12rem}.h-6{height:1.5rem}.min-h-screen{min-height:100vh}.w-48{width:12rem}.w-6{width:1.5rem}.w-full{width:100%}.max-w-3xl{max-width:48rem}.max-w-5xl{max-width:64rem}.transform{transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-2{gap:0.5rem}.gap-8{gap:2rem}.space-x-2 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(0.5rem * var(--tw-space-x-reverse));margin-left:calc(0.5rem * calc(1 - var(--tw-space-x-reverse)))}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.space-y-6 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.5rem * var(--tw-space-y-reverse))}.overflow-hidden{overflow:hidden}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-md{border-radius:0.375rem}.rounded-xl{border-radius:0.75rem}.border{border-width:1px}.border-2{border-width:2px}.border-4{border-width:4px}.border-b{border-bottom-width:1px}.border-b-4{border-bottom-width:4px}.border-t{border-top-width:1px}.border-gray-100{--tw-border-opacity:1;border-color:rgb(243 244 246 / var(--tw-border-opacity, 1))}.border-gray-200{--tw-border-opacity:1;border-color:rgb(229 231 235 / var(--tw-border-opacity, 1))}.border-gray-300{--tw-border-opacity:1;border-color:rgb(209 213 219 / var(--tw-border-opacity, 1))}.border-green-700{--tw-border-opacity:1;border-color:rgb(21 128 61 / var(--tw-border-opacity, 1))}.border-transparent{border-color:transparent}.border-green-600{--tw-border-opacity:1;border-color:rgb(22 163 74 / var(--tw-border-opacity, 1))}.bg-gray-200{--tw-bg-opacity:1;background-color:rgb(229 231 235 / var(--tw-bg-opacity, 1))}.bg-gray-50{--tw-bg-opacity:1;background-color:rgb(249 250 251 / var(--tw-bg-opacity, 1))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.object-cover{object-fit:cover}.p-2{padding:0.5rem}.p-6{padding:1.5rem}.p-8{padding:2rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-4{padding-left:1rem;padding-right:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.px-8{padding-left:2rem;padding-right:2rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.py-4{padding-top:1rem;padding-bottom:1rem}.py-6{padding-top:1.5rem;padding-bottom:1.5rem}.text-center{text-align:center}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-5xl{font-size:3rem;line-height:1}.text-base{font-size:1rem;line-height:1.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-bold{font-weight:700}.font-extrabold{font-weight:800}.font-medium{font-weight:500}.font-semibold{font-weight:600}.leading-relaxed{line-height:1.625}.leading-tight{line-height:1.25}.text-gray-500{--tw-text-opacity:1;color:rgb(107 114 128 / var(--tw-text-opacity, 1))}.text-gray-600{--tw-text-opacity:1;color:rgb(75 85 99 / var(--tw-text-opacity, 1))}.text-gray-700{--tw-text-opacity:1;color:rgb(55 65 81 / var(--tw-text-opacity, 1))}.text-gray-800{--tw-text-opacity:1;color:rgb(31 41 55 / var(--tw-text-opacity, 1))}.text-gray-900{--tw-text-opacity:1;color:rgb(17 24 39 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-md{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-xl{--tw-shadow:0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-green-400\/50{--tw-shadow-color:rgb(74 222 128 / 0.5);--tw-shadow:var(--tw-shadow-colored)}.transition{transition-property:color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-150{transition-duration:150ms}.duration-200{transition-duration:200ms}.duration-300{transition-duration:300ms}.hover\:scale-105:hover{--tw-scale-x:1.05;--tw-scale-y:1.05;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\:scale-\[1\.01\]:hover{--tw-scale-x:1.01;--tw-scale-y:1.01;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\:border-green-600:hover{--tw-border-opacity:1;border-color:rgb(22 163 74 / var(--tw-border-opacity, 1))}.hover\:bg-gray-100:hover{--tw-bg-opacity:1;background-color:rgb(243 244 246 / var(--tw-bg-opacity, 1))}.hover\:bg-gray-50:hover{--tw-bg-opacity:1;background-color:rgb(249 250 251 / var(--tw-bg-opacity, 1))}.hover\:text-gray-900:hover{--tw-text-opacity:1;color:rgb(17 24 39 / var(--tw-text-opacity, 1))}.hover\:text-green-600:hover{--tw-text-opacity:1;color:rgb(22 163 74 / var(--tw-text-opacity, 1))}.hover\:underline:hover{-webkit-text-decoration-line:underline;text-decoration-line:underline}.hover\:shadow-2xl:hover{--tw-shadow:0 25px 50px -12px rgb(0 0 0 / 0.25);--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.hover\:shadow-xl:hover{--tw-shadow:0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.focus\:border-green-500:focus{--tw-border-opacity:1;border-color:rgb(34 197 94 / var(--tw-border-opacity, 1))}.focus\:ring-green-500:focus{--tw-ring-opacity:1;--tw-ring-color:rgb(34 197 94 / var(--tw-ring-opacity, 1))}@media (min-width: 640px){.sm\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}}@media (min-width: 768px){.md\:flex{display:flex}.md\:hidden{display:none}.md\:h-64{height:16rem}.md\:w-64{width:16rem}.md\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.md\:text-2xl{font-size:1.5rem;line-height:2rem}.md\:text-7xl{font-size:4.5rem;line-height:1}}@media (min-width: 1024px){.lg\:grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}.lg\:px-8{padding-left:2rem;padding-right:2rem}}</style></head>
+
+<body class="min-h-screen">
+
+<!-- Header & Navigation --><header class="sticky top-0 z-50 shadow-md">
+    <nav class="container mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+        <!-- Branding using the custom accent color defined in styles.css --><a href="file:///C:/Users/teddie_puyawan/WebstormProjects/untitled10/puyawan_website.html#home" class="text-2xl font-bold accent-text">Teddie Puyawan</a>
+
+        <!-- Desktop Menu - UPDATED: Added shape frame effect on hover --><div class="hidden md:flex space-x-2 text-lg font-medium">
+        <!-- Added px-3 py-1 rounded-lg border-transparent and hover:border-green-600 --><a href="file:///C:/Users/teddie_puyawan/WebstormProjects/untitled10/puyawan_website.html#home" class="px-3 py-1 rounded-lg border border-transparent header-link transition duration-200 hover:border-green-600 hover:text-green-600">Home</a>
+        <a href="file:///C:/Users/teddie_puyawan/WebstormProjects/untitled10/puyawan_website.html#about" class="px-3 py-1 rounded-lg border border-transparent header-link transition duration-200 hover:border-green-600 hover:text-green-600">About</a>
+        <a href="file:///C:/Users/teddie_puyawan/WebstormProjects/untitled10/puyawan_website.html#skills" class="px-3 py-1 rounded-lg border border-transparent header-link transition duration-200 hover:border-green-600 hover:text-green-600">Skills</a>
+        <a href="file:///C:/Users/teddie_puyawan/WebstormProjects/untitled10/puyawan_website.html#works" class="px-3 py-1 rounded-lg border border-transparent header-link transition duration-200 hover:border-green-600 hover:text-green-600">Works</a>
+        <a href="file:///C:/Users/teddie_puyawan/WebstormProjects/untitled10/puyawan_website.html#contacts" class="px-3 py-1 rounded-lg border border-transparent header-link transition duration-200 hover:border-green-600 hover:text-green-600">Contacts</a>
+    </div>
+
+        <!-- Mobile Menu Button --><button id="menu-button" class="md:hidden p-2 rounded-md hover:bg-gray-100 transition duration-200">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+    </button>
+    </nav>
+
+    <!-- Mobile Menu (Hidden by default) --><div id="mobile-menu" class="hidden md:hidden shadow-lg border-t border-gray-100 bg-white">
+    <a href="file:///C:/Users/teddie_puyawan/WebstormProjects/untitled10/puyawan_website.html#home" class="block py-3 px-6 text-base font-medium hover:bg-gray-50 border-b text-gray-800">Home</a>
+    <a href="file:///C:/Users/teddie_puyawan/WebstormProjects/untitled10/puyawan_website.html#about" class="block py-3 px-6 text-base font-medium hover:bg-gray-50 border-b text-gray-800">About</a>
+    <a href="file:///C:/Users/teddie_puyawan/WebstormProjects/untitled10/puyawan_website.html#skills" class="block py-3 px-6 text-base font-medium hover:bg-gray-50 border-b text-gray-800">Skills</a>
+    <a href="file:///C:/Users/teddie_puyawan/WebstormProjects/untitled10/puyawan_website.html#works" class="block py-3 px-6 text-base font-medium hover:bg-gray-50 border-b text-gray-800">Works</a>
+    <a href="file:///C:/Users/teddie_puyawan/WebstormProjects/untitled10/puyawan_website.html#contacts" class="block py-3 px-6 text-base font-medium hover:bg-gray-50 text-gray-800">Contacts</a>
+</div>
+</header>
+
+<!-- 1. Home Section --><section id="home" class="section-padding min-h-screen flex items-center justify-center">
+    <div class="container mx-auto px-4 text-center">
+        <div class="flex flex-col items-center">
+
+            <!-- Profile Picture Container - Placeholder now includes a camera icon (📸 TP) --><div class="w-48 h-48 md:w-64 md:h-64 rounded-full bg-gray-200 mb-6 overflow-hidden shadow-lg border-4 border-gray-100">
+
+            <img src="./Teddie Puyawan __files/photo2.jpg" height="1440" width="1440">
+        </div>
+
+            <h1 class="text-5xl md:text-7xl font-extrabold leading-tight mb-4 text-gray-900">
+                Multimedia Student &amp; Creator
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-500 max-w-3xl mb-8">
+                Designing, filming, and editing compelling visual content. Specializing in video production, graphic design, and interactive media.
+            </p>
+            <!-- UPDATED: Added border-2 border-green-700 and shadow-green-400/50 for frame effect --><a href="file:///C:/Users/teddie_puyawan/WebstormProjects/untitled10/puyawan_website.html#works" class="inline-block px-8 py-3 text-lg font-semibold text-white accent-bg rounded-lg shadow-xl transition duration-300 accent-hover transform hover:scale-105
+                        border-2 border-green-700 shadow-green-400/50">
+            View My Works
+        </a>
+        </div>
+    </div>
+</section>
+
+<!-- 2. About Section --><section id="about" class="section-padding border-t border-b">
+    <div class="container mx-auto px-4 max-w-5xl">
+        <h2 class="text-4xl font-bold text-center mb-12 accent-text">About Me</h2>
+        <div class="text-lg text-gray-700 leading-relaxed space-y-6 bg-white p-8 rounded-xl shadow-lg border border-gray-100">
+            <p>
+                I am Teddie Puyawan, a dedicated Multimedia Student with a strong focus on digital storytelling and visual communication. I believe in the power of media to inform, entertain, and inspire, and I am constantly honing my skills across the entire production pipeline, I am a passionate multimedia artist with experience in video editing, 3D modeling, and sound design. I possess expertise in crafting captivating visual content and narrating compelling stories for both short films and music videos. Eager to contribute creativity and technical expertise to collaborative media projects.
+            </p>
+            <p>
+                My coursework and personal projects have given me hands-on experience in *video editing, motion graphics, photography, and graphic design.* I am proficient in the Adobe Creative Suite and always eager to learn new tools and techniques to push creative boundaries.
+            </p>
+            <p>
+                I am currently looking for opportunities to apply my creativity and technical skills in a professional setting. Check out my works below!
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- 3. Skills Section --><section id="skills" class="section-padding">
+    <div class="container mx-auto px-4">
+        <h2 class="text-4xl font-bold text-center mb-12 accent-text">Skills</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+            <!-- Video & Motion Graphics --><div class="bg-white p-8 rounded-xl shadow-lg border border-gray-100 transition duration-300 hover:shadow-xl">
+            <h3 class="text-2xl font-semibold mb-6 flex items-center accent-text">
+                <span class="text-3xl mr-3">🎬</span> Video &amp; Motion Graphics
+            </h3>
+            <ul class="space-y-4 text-gray-700">
+                <li class="flex items-center">Adobe Premiere Pro</li>
+                <li class="flex items-center">Adobe After Effects</li>
+                <li class="flex items-center">CapCut Editing</li>
+                <li class="flex items-center">Color Grading (DaVinci)</li>
+                <li class="flex items-center">Video Production &amp; Filming</li>
+            </ul>
+        </div>
+
+            <!-- Design & Photography --><div class="bg-white p-8 rounded-xl shadow-lg border border-gray-100 transition duration-300 hover:shadow-xl">
+            <h3 class="text-2xl font-semibold mb-6 flex items-center accent-text">
+                <span class="text-3xl mr-3">🎨</span> Design &amp; Photography
+            </h3>
+            <ul class="space-y-4 text-gray-700">
+                <li class="flex items-center">Adobe Photoshop</li>
+                <li class="flex items-center">Canva</li>
+                <li class="flex items-center">Ibis Paint</li>
+                <li class="flex items-center">Digital Photography</li>
+            </ul>
+        </div>
+
+            <!-- Web & Interactive --><div class="bg-white p-8 rounded-xl shadow-lg border border-gray-100 transition duration-300 hover:shadow-xl">
+            <h3 class="text-2xl font-semibold mb-6 flex items-center accent-text">
+                <span class="text-3xl mr-3">🌐</span> Web &amp; Interactive
+            </h3>
+            <ul class="space-y-4 text-gray-700">
+                <li class="flex items-center">HTML5 &amp; CSS3</li>
+                <li class="flex items-center">JavaScript (Basic)</li>
+                <li class="flex items-center">Responsive Web Design</li>
+                <li class="flex items-center">Interactive Media Concepts</li>
+            </ul>
+        </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- 4. Works Section (Now Tabbed) --><section id="works" class="section-padding border-t border-b">
+    <div class="container mx-auto px-4">
+        <h2 class="text-4xl font-bold text-center mb-8 accent-text">Featured Works</h2>
+
+        <!-- Tabs/Folders Navigation --><div class="flex justify-center border-b border-gray-200 mb-8">
+        <button id="tab-2d" onclick="showWorks(&#39;2d&#39;)" class="px-6 py-3 text-lg text-gray-600 transition duration-200 hover:text-gray-900 border-b-4 border-transparent accent-text font-semibold border-green-600">
+            2D Animation &amp; Design (10)
+        </button>
+        <button id="tab-3d" onclick="showWorks(&#39;3d&#39;)" class="px-6 py-3 text-lg text-gray-600 transition duration-200 hover:text-gray-900 border-transparent">
+            3D Animation &amp; Modeling (10)
+        </button>
+    </div>
+
+        <!-- 2D Animation & Design Projects --><div id="works-2d" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+
+        <!-- 2D Project Card 1: Cinematic Short Film -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden transition duration-300 hover:shadow-2xl">
+            <img src="./Teddie Puyawan __files/1.jpg" height="1920" width="1080">
+
+
+            <div class="p-6">
+                <h3 class="text-xl font-semibold mb-2 text-gray-900">Cinematic Film Poster</h3>
+                <p class="text-gray-600 mb-4 text-sm">This Poster is Design designed by me and also the photographer</p>
+                <div class="flex flex-wrap gap-2 text-xs font-medium">
+                    <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full">Graphic design</span>
+                    <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full">Canva</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2D Project Card 2: Brand Identity -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden transition duration-300 hover:shadow-2xl">
+            <img src="./Teddie Puyawan __files/2.png" height="1375" width="2445">
+
+            <div class="p-6">
+                <h3 class="text-xl font-semibold mb-2 text-gray-900">Abandon school</h3>
+                <p class="text-gray-600 mb-4 text-sm">This photo is edited using Adobe photoshop and the photo is taken by me</p>
+                <div class="flex flex-wrap gap-2 text-xs font-medium">
+                    <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full">Adobe Photoshop</span>
+                    <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full">Photography</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2D Project Card 3: Corporate Explainer Video -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden transition duration-300 hover:shadow-2xl">
+            <img src="./Teddie Puyawan __files/3.png" height="2246" width="1584">
+
+            <div class="p-6">
+                <h3 class="text-xl font-semibold mb-2 text-gray-900">Theatre Poster</h3>
+                <p class="text-gray-600 mb-4 text-sm">This poster is used for a Play and They post it on social media, As you can see i only use elements for the poster I made to give it a vibe of comedy and drama and also about sexuality</p>
+                <div class="flex flex-wrap gap-2 text-xs font-medium">
+                    <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full">Canva</span>
+                    <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full">Graphic design</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2D Project Card 4: Event Photography Series -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden transition duration-300 hover:shadow-2xl">
+            <img src="./Teddie Puyawan __files/4.jpg" height="654" width="1186">
+
+            <div class="p-6">
+                <h3 class="text-xl font-semibold mb-2 text-gray-900">dark-fantasy, mystical, and epic atmosphere</h3>
+                <p class="text-gray-600 mb-4 text-sm">The image shows three cloaked or armored figures standing on a dark ridge, facing a swirling green vortex of energy in the sky. Above the vortex, a massive, shadowy serpent- or dragon-like face with glowing green eyes looms over them. The sky is filled with dark purples, blacks, and swirling green mist, giving the scene a supernatural, ominous tone.</p>
+                <div class="flex flex-wrap gap-2 text-xs font-medium">
+                    <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full">Ibis Paint</span>
+                    <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full">2D Drawing</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2D Project Card 5: Product Packaging Design -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden transition duration-300 hover:shadow-2xl">
+            <img src="./Teddie Puyawan __files/5.jpg" height="2048" width="1969">
+
+            <div class="p-6">
+                <h3 class="text-xl font-semibold mb-2 text-gray-900">Skirk</h3>
+                <p class="text-gray-600 mb-4 text-sm">A Fanart art and the character is from genshin impact.</p>
+                <div class="flex flex-wrap gap-2 text-xs font-medium">
+                    <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full">Ibis Paint</span>
+                    <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full">Picsart</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2D Project Card 6: Podcast Visualizer -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden transition duration-300 hover:shadow-2xl">
+            <img src="./Teddie Puyawan __files/6.jpg" height="1593" width="1532">
+
+            <div class="p-6">
+                <h3 class="text-xl font-semibold mb-2 text-gray-900">Columbina</h3>
+                <p class="text-gray-600 mb-4 text-sm">A Fanart art and the character is from genshin impact.</p>
+                <div class="flex flex-wrap gap-2 text-xs font-medium">
+                    <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full">Ibis Paint</span>
+                    <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full">Picsart</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2D Project Card 7: Mobile App UI Design -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden transition duration-300 hover:shadow-2xl">
+            <img src="./Teddie Puyawan __files/8.jpg" height="2048" width="1969">
+
+            <div class="p-6">
+                <h3 class="text-xl font-semibold mb-2 text-gray-900">Phrolova</h3>
+                <p class="text-gray-600 mb-4 text-sm">FanArt and A Charcter from Wuthering waves</p>
+                <div class="flex flex-wrap gap-2 text-xs font-medium">
+                    <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full">Ibis Paint</span>
+                    <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full">Picsart</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2D Project Card 8: Typographic Poster Series -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden transition duration-300 hover:shadow-2xl">
+            <img src="./Teddie Puyawan __files/9.jpg" height="2048" width="1969">
+
+            <div class="p-6">
+                <h3 class="text-xl font-semibold mb-2 text-gray-900">Fleurdelys</h3>
+                <p class="text-gray-600 mb-4 text-sm">FanArt and a Character from Wuthering waves</p>
+                <div class="flex flex-wrap gap-2 text-xs font-medium">
+                    <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full">Ibis Paint</span>
+                    <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full">Picsart</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2D Project Card 9: Social Media Campaign -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden transition duration-300 hover:shadow-2xl">
+            <img src="./Teddie Puyawan __files/10.jpeg" height="2048" width="1536">
+
+            <div class="p-6">
+                <h3 class="text-xl font-semibold mb-2 text-gray-900">Character Design</h3>
+                <p class="text-gray-600 mb-4 text-sm">A Character I made for DND( Dungeons and Dragons)</p>
+                <div class="flex flex-wrap gap-2 text-xs font-medium">
+                    <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full">Ibis Paint</span>
+                    <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full">Character design</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2D Project Card 10: Environmental Graphic Design -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden transition duration-300 hover:shadow-2xl">
+            <img src="./Teddie Puyawan __files/Screenshot (447).png" height="1080" width="1920">
+
+            <div class="p-6">
+                <h3 class="text-xl font-semibold mb-2 text-gray-900">Video Editing</h3>
+                <p class="text-gray-600 mb-4 text-sm">A 3D Film I compile and Edited for a short film pattern and also I Did the sound design </p>
+                <div class="flex flex-wrap gap-2 text-xs font-medium">
+                    <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full">Capcut</span>
+                    <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full">Video Editing</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- 3D Animation & Modeling Projects (Hidden by Default) -->
+        <div id="works-3d" class="hidden grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+
+            <!-- 3D Project Card 1: Pattern (Existing with corrected placeholder) -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden transition duration-300 hover:shadow-2xl">
+                <img class="w-full h-48 object-cover" src="./Teddie Puyawan __files/pattern.jpg" alt="Pattern Poster">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2 text-gray-900">Pattern (3D Short)</h3>
+                    <p class="text-gray-600 mb-4 text-sm">a chamelion boy who embarks his journey to find his true self</p>
+                    <div class="flex flex-wrap gap-2 text-xs font-medium">
+                        <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full">Blender</span>
+                        <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full">Houdini</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3D Project Card 2: Architectural Visualization (New Placeholder) -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden transition duration-300 hover:shadow-2xl">
+                <img src="./Teddie Puyawan __files/New Cookie.png" height="1080" width="1920">
+
+
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2 text-gray-900">3D model of a Cookie in a Can</h3>
+                    <p class="text-gray-600 mb-4 text-sm">A 3D Project</p>
+                    <div class="flex flex-wrap gap-2 text-xs font-medium">
+                        <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full">Blender</span>
+                        <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full">Product</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3D Project Card 3: Character Rigging Demo (New Placeholder) -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden transition duration-300 hover:shadow-2xl">
+                <img src="./Teddie Puyawan __files/Film 3d environment.png" height="1080" width="1920">
+
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2 text-gray-900">3D Environment for a film</h3>
+                    <p class="text-gray-600 mb-4 text-sm">A Environment made from scatch and used it for our film "Pattern"</p>
+                    <div class="flex flex-wrap gap-2 text-xs font-medium">
+                        <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full">Maya</span>
+                        <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full">Animation</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3D Project Card 4: Game Asset Modeling (New Placeholder) -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden transition duration-300 hover:shadow-2xl">
+                <img src="./Teddie Puyawan __files/Screenshot (3).png" height="1080" width="1920">
+
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2 text-gray-900">Film using Unreal Engine</h3>
+                    <p class="text-gray-600 mb-4 text-sm">Making a Short film using Unreal Engine and assets from Mixamo and Sketchfab.</p>
+                    <div class="flex flex-wrap gap-2 text-xs font-medium">
+                        <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full">Unreal Engine5</span>
+                        <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full">Mixamo</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3D Project Card 5: Hard Surface Sci-Fi Scene (New Placeholder) -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden transition duration-300 hover:shadow-2xl">
+                <img src="./Teddie Puyawan __files/received_511263741985034.jpeg" height="1080" width="1920">
+
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2 text-gray-900">3d model Of a selfmade Funkopop but in Hirono style </h3>
+                    <p class="text-gray-600 mb-4 text-sm">Detailed modeling and texturing of a figure </p>
+                    <div class="flex flex-wrap gap-2 text-xs font-medium">
+                        <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full">Blender</span>
+                        <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full">Picsart</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3D Project Card 6: Product Animation (New Placeholder) -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden transition duration-300 hover:shadow-2xl">
+                <img src="./Teddie Puyawan __files/Product.png" height="714" width="1447">
+
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2 text-gray-900">Product AD Animation</h3>
+                    <p class="text-gray-600 mb-4 text-sm">360-degree render and exploded view animation for a conceptual consumer electronic device.</p>
+                    <div class="flex flex-wrap gap-2 text-xs font-medium">
+                        <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full">Blender</span>
+                        <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full">Adobe Premier pro</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3D Project Card 7: VFX Breakdown Reel (New Placeholder) -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden transition duration-300 hover:shadow-2xl">
+                <img src="./Teddie Puyawan __files/Medieval Weapons_Puyawan.png" height="1080" width="1920">
+
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2 text-gray-900">Medieval Weapon</h3>
+                    <p class="text-gray-600 mb-4 text-sm">Inspired by a medieval after battle where the weapons are scattered on the feild</p>
+                    <div class="flex flex-wrap gap-2 text-xs font-medium">
+                        <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full">Blender</span>
+                        <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full">Poly Haeven</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3D Project Card 8: Digital Sculpture (New Placeholder) -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden transition duration-300 hover:shadow-2xl">
+                <img src="./Teddie Puyawan __files/Statue Diorama.png" height="853" width="1522">
+
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2 text-gray-900">Diorama</h3>
+                    <p class="text-gray-600 mb-4 text-sm">Inspired by a weeping angels in an abandon ruins</p>
+                    <div class="flex flex-wrap gap-2 text-xs font-medium">
+                        <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full">Blender</span>
+                        <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full">sketchfab</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3D Project Card 9: Procedural Environment (New Placeholder) -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden transition duration-300 hover:shadow-2xl">
+                <img src="./Teddie Puyawan __files/environment.png" height="1080" width="1920">
+
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2 text-gray-900">Environment</h3>
+                    <p class="text-gray-600 mb-4 text-sm">A 3D environment using assets</p>
+                    <div class="flex flex-wrap gap-2 text-xs font-medium">
+                        <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full">3D Modeling</span>
+                        <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full">Environment</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3D Project Card 10: Motion Tracking Test (New Placeholder) -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden transition duration-300 hover:shadow-2xl">
+                <img src="./Teddie Puyawan __files/Tracking.png" height="499" width="834">
+
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2 text-gray-900">Motion Tracking</h3>
+                    <p class="text-gray-600 mb-4 text-sm">3D model tacking on a captured video</p>
+                    <div class="flex flex-wrap gap-2 text-xs font-medium">
+                        <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full">Blender</span>
+                        <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full">Tracking</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- 5. Contact Section -->
+<section id="contacts" class="section-padding bg-gray-50">
+    <div class="container mx-auto px-4 max-w-3xl">
+        <h2 class="text-4xl font-bold text-center mb-6 accent-text">Get In Touch</h2>
+        <p class="text-center text-xl text-gray-700 mb-10">
+            Ready to collaborate on a project? I'm always open to discussing new ideas.
+        </p>
+
+        <form class="space-y-6 bg-white p-8 rounded-xl shadow-xl border border-gray-200">
+            <div>
+                <label for="name" class="block text-sm font-medium text-gray-700 mb-2">Name</label>
+                <input type="text" id="name" name="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-green-500 focus:border-green-500 transition duration-150" placeholder="Your Name">
+            </div>
+            <div>
+                <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                <input type="email" id="email" name="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-green-500 focus:border-green-500 transition duration-150" placeholder="your.email@example.com">
+            </div>
+            <div>
+                <label for="message" class="block text-sm font-medium text-gray-700 mb-2">Message</label>
+                <textarea id="message" name="message" rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-green-500 focus:border-green-500 transition duration-150" placeholder="Tell me about your project..."></textarea>
+            </div>
+            <button type="submit" class="w-full px-6 py-3 text-lg font-semibold text-white accent-bg rounded-lg shadow-lg transition duration-300 accent-hover transform hover:scale-[1.01]
+                        border-2 border-green-700 shadow-green-400/50">
+                Send Message
+            </button>
+        </form>
+
+        <div class="mt-12 text-center text-gray-600">
+            <p>
+                Connect with me directly: <a href="mailto:frederiquepuyawan01@gmail.com" class="accent-text font-medium hover:underline">frederiquepuyawan01@gmail.com</a>
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="accent-bg text-white py-6">
+    <div class="container mx-auto px-4 text-center">
+        <p class="text-sm">© 2024 Teddie Puyawan. All rights reserved. | Built with Tailwind CSS.</p>
+    </div>
+</footer>
+
+</body></html>
